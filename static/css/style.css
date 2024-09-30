@@ -5,73 +5,104 @@
     box-sizing: border-box;
 }
 
-/* Imposta una tipografia moderna */
+/* Imposta la tipografia e i colori */
 body {
-    font-family: 'Poppins', sans-serif; /* Usa Google Fonts */
-    background-color: #f4f4f9; /* Colore di sfondo leggero */
-    color: #333; /* Colore del testo principale */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     line-height: 1.6;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
 }
 
-/* Stile per il titolo */
+/* Stile per header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Stile per logo del Politecnico e GitHub */
+.polimi-logo {
+    height: 40px; /* Stessa altezza del logo di GitHub */
+}
+
+.github-logo {
+    height: 40px;
+    width: 40px;
+}
+
+/* Stile per il titolo del corso */
 h1 {
-    font-size: 2.8rem; /* Titolo leggermente più grande */
-    color: #0078d7; /* Blu moderno */
+    font-size: 2.5rem;
+    color: #102C53; /* Nuovo blu */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Stile per il contenuto principale */
+main {
+    width: 100%;
+}
+
+/* Stile per il titolo del corso */
+h2 {
+    font-size: 2rem;
+    color: #102C53; /* Nuovo blu */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Stile per il nome */
+p {
+    font-size: 1.2rem;
+    color: #333;
     margin-bottom: 30px;
     text-align: center;
-    font-weight: 700; /* Peso più accentuato per il titolo */
 }
 
-/* Stile per gli elenchi */
-ul {
-    list-style: none; /* Rimuove i bullet points */
-    padding: 0;
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px; /* Angoli arrotondati */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più evidente */
+/* Stile per i link delle lezioni */
+ul.lezioni {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spaziatura tra i link */
+    list-style: none;
 }
 
-/* Spaziatura tra gli elementi della lista */
-li {
-    margin: 10px 0;
-}
-
-/* Stile per i link */
-a {
+ul.lezioni li a {
+    border-top: 30px;
     text-decoration: none;
-    color: #0078d7; /* Colore blu per i link */
+    color: #102C53;
     font-size: 1.2rem;
-    padding: 15px 25px; /* Maggiore padding per i link */
-    border: 2px solid #0078d7;
-    border-radius: 12px; /* Angoli arrotondati maggiori */
-    transition: all 0.4s ease; /* Transizione più lenta e fluida */
-    display: inline-block; /* Per rendere i link come pulsanti */
+    padding: 20px 40px;
+    border: 2px solid #102C53;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-/* Effetti hover per i link */
-a:hover {
-    background-color: #0078d7; /* Colore di sfondo blu */
-    color: #fff; /* Colore del testo bianco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Aggiunge un'ombra al passaggio del mouse */
+ul.lezioni li a:hover {
+    background-color: #102C53;
+    color: #fff;
 }
 
-/* Responsive design per schermi piccoli */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    a {
-        font-size: 1rem;
-        padding: 12px 20px; /* Riduzione padding su schermi piccoli */
-    }
+/* Stile per il footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #102C53;
+    color: white;
+    width: 100%;
+    font-size: 0.9rem;
 }
+
+
+
 
