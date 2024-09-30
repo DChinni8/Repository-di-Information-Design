@@ -1,5 +1,6 @@
 <!--definiamo il nostro esempio -->
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viwport" content=""width=device-width, initial-scale="1">
@@ -19,3 +20,6 @@
         </ul>
     </p>
 </body>
+<script type="text/javascript" src="script.js"></script>
+</html>
+
