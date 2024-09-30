@@ -30,12 +30,12 @@ header {
 
 /* Stile per logo del Politecnico e GitHub */
 .polimi-logo {
-    height: 40px; /* Stessa altezza del logo di GitHub */
+    height: 60px; /* Stessa altezza del logo di GitHub */
 }
 
 .github-logo {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    margin-top: 0px;
 }
 
 /* Stile per il titolo del corso */
@@ -77,7 +77,6 @@ ul.lezioni {
 }
 
 ul.lezioni li a {
-    border-top: 30px;
     text-decoration: none;
     color: #102C53;
     font-size: 1.2rem;
@@ -103,6 +102,13 @@ footer {
     font-size: 0.9rem;
 }
 
+footer p {
+    color: #fff;
+}
+
+main {
+    margin:0;
+}
 
 
 
