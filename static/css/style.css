@@ -1,14 +1,77 @@
-*{
+/* Reset e box-sizing */
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-title{
-    font-size: 50px;
-    font-family: Arial, sans-serif;
+/* Imposta una tipografia moderna */
+body {
+    font-family: 'Poppins', sans-serif; /* Usa Google Fonts */
+    background-color: #f4f4f9; /* Colore di sfondo leggero */
+    color: #333; /* Colore del testo principale */
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-p{
-    font-size: 10px;
-    font-family: 'Times New Roman', Times, serif;
+/* Stile per il titolo */
+h1 {
+    font-size: 2.8rem; /* Titolo leggermente più grande */
+    color: #0078d7; /* Blu moderno */
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700; /* Peso più accentuato per il titolo */
 }
+
+/* Stile per gli elenchi */
+ul {
+    list-style: none; /* Rimuove i bullet points */
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px; /* Angoli arrotondati */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombra più evidente */
+}
+
+/* Spaziatura tra gli elementi della lista */
+li {
+    margin: 10px 0;
+}
+
+/* Stile per i link */
+a {
+    text-decoration: none;
+    color: #0078d7; /* Colore blu per i link */
+    font-size: 1.2rem;
+    padding: 15px 25px; /* Maggiore padding per i link */
+    border: 2px solid #0078d7;
+    border-radius: 12px; /* Angoli arrotondati maggiori */
+    transition: all 0.4s ease; /* Transizione più lenta e fluida */
+    display: inline-block; /* Per rendere i link come pulsanti */
+}
+
+/* Effetti hover per i link */
+a:hover {
+    background-color: #0078d7; /* Colore di sfondo blu */
+    color: #fff; /* Colore del testo bianco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Aggiunge un'ombra al passaggio del mouse */
+}
+
+/* Responsive design per schermi piccoli */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 12px 20px; /* Riduzione padding su schermi piccoli */
+    }
+}
+
