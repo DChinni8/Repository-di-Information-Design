@@ -38,14 +38,6 @@ header {
     margin-top: 0px;
 }
 
-/* Stile per il titolo del corso */
-h1 {
-    font-size: 2.5rem;
-    color: #102C53; /* Nuovo blu */
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 /* Stile per il contenuto principale */
 main {
     width: 100%;
