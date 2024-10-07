@@ -1,42 +1,32 @@
-let xsize = 400;
-let ysize = 400;
+let stars = [];
+
 function setup() {
-  createCanvas(xsize, ysize);
+  createCanvas(windowWidth, windowHeight);
+  background(0);
+
+  // Creiamo 500 stelle
+  for (let i = 0; i < 500; i++) {
+    stars.push({
+      x: random(width),
+      y: random(height),
+      size: random(1, 3),
+      speed: random(1, 5)
+    });
+  }
 }
 
 function draw() {
-  background("#102C53");
-  fill("#fff300");
-  stroke("red");
-  strokeWeight(10);
-  circle(300,75,100);
-  rect(0,200,400,200);
+  background(0);
 
-  fill("green");
-  stroke("darkgreen");
-  strokeWeight(5);
-  rect(0,200,400,200);
-  //ordine in p5 molto importante
-  stroke("#fffdd0");
-  strokeWeight(20);
-  let xStars_prim= 10;
-  let yStars_prim= 20;
-  let passo=1;
-  for(let i=0; i<30; i = i+passo){
-    if(i%2==0){
-      //corpo di ramo vero
-      stroke("red");
-    }else{
-      //altrimenti questo
-      stroke("#fff300")
+  // Disegna le stelle
+  for (let star of stars) {
+    star.y += star.speed;
+    if (star.y > height) {
+      star.y = 0;
+      star.x = random(width);
     }
-    strokeWeight(i*3);
-    point(xStars_prim*i,yStars_prim+55);
+    noStroke();
+    fill(255);
+    ellipse(star.x, star.y, star.size);
   }
-  //stella polare
-  //point(xStars_prim+80,60);
-  fill("white");
-  stroke(0);
-  strokeWeight(0);
-  text("C'era una volta...",200,350);
 }
